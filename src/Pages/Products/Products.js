@@ -44,7 +44,7 @@ const Products = () => {
     ]
     return (
         <div className='mt-10'>
-            <h1 className='py-3 text-5xl font-semibold text-cyan-500'>Our Products</h1>
+            <h1 className='py-3 text-5xl font-semibold text-center text-cyan-500'>Our Products</h1>
             <div className='grid gird-cols-1 lg:grid-cols-3 gap-10'>
                 {
                     items.map(item => <Product item={item}></Product>)
