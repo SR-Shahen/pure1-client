@@ -2,16 +2,18 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Login = () => {
-    const handelFromSubmit = event => {
+    const handelLogin = event => {
         event.preventDefault();
-        const name = event.target.name.value;
-        console.log(name);
+        const email = event.target.email.value;
+        const password = event.target.password.value;
+        console.log(email, password);
+
     }
 
     return (
         <div class="card w-80 lg:w-96 bg-base-100 shadow-xl mx-auto my-10 p-5">
             <h1 className='text-2xl text-purple-600 font-bold text-center'>Login!</h1>
-            <form onSubmit={handelFromSubmit} >
+            <form onSubmit={handelLogin} >
                 <div class="form-control w-full max-w-xs">
                     <label class="label">
                         <span class="label-text text-xl">Email</span>
